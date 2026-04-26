@@ -5,4 +5,10 @@ async function getPeliculas(){
     return data
 }
 
-export default { getPeliculas }
+async function getPeliculasID(id){
+    const data= await pelicula.findByPk(id)
+    return data
+}
+
+
+export default { getPeliculas, getPeliculasID }
