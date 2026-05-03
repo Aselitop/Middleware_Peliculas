@@ -2,12 +2,15 @@ import express from 'express'
 import fs from 'fs'
 import path from 'path'
 import rutaPeliculas from './routes/ruta_peliculas.js'
+import jwt from 'jsonwebtoken' 
 
 const port=3000
 
 const app=express()
 
 app.use(express.json())
+
+const llave_secreta='clave123'
 
 const logger = (req, res, next) => {
     const log=(`${new Date().toLocaleString()} - ${req.method} en ${req.url}\n`);
@@ -17,7 +20,7 @@ const logger = (req, res, next) => {
 };
 
 
-const validarApiKey = (req, res, next) => {
+const validarToken = (req, res, next) => {
     const apiKey = req.query.key;
         if (apiKey === '12345') {
             next();
@@ -27,7 +30,7 @@ const validarApiKey = (req, res, next) => {
 };
 
 app.use(logger);
-app.use('/peliculas',validarApiKey,rutaPeliculas)
+app.use('/peliculas',rutaPeliculas)
 
 app.listen(port,()=>{
     console.log('Servidor iniciado en puerto :',port)
