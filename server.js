@@ -20,14 +20,14 @@ const logger = (req, res, next) => {
 };
 
 
-const validarToken = (req, res, next) => {
-    const apiKey = req.query.key;
-        if (apiKey === '12345') {
-            next();
-        } else {
-            res.status(403).send('Acceso Prohibido: API Key inválida');
-        }
-};
+//const validarToken = (req, res, next) => {
+//    const apiKey = req.query.key;
+//        if (apiKey === '12345') {
+//            next();
+//        } else {
+//            res.status(403).send('Acceso Prohibido: API Key inválida');
+//        }
+//};
 
 app.use(logger);
 app.use('/peliculas',rutaPeliculas)

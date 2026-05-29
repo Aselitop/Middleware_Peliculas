@@ -5,7 +5,8 @@ import { validarToken } from '../middleware/auth.js';
 import jwt from 'jsonwebtoken'
 
 const router = express.Router()
-const llave_secreta='clave123'
+const llave_secreta="clave12345"
+
 //ONLY LOGIN
 router.post('/login', (req,res)=>{
     console.log('body', req.body)
