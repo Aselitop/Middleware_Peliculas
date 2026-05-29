@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 
-const db=new Sequelize('postgresql://peliculas_siof_user:jeaVtMMlQUGLRiJKZeQxHdWSzzvlK0Ur@dpg-d8cj0c8g4nts738o46h0-a.virginia-postgres.render.com/peliculas_siof',{
+const db=new Sequelize(process.env.DATABASE_URL,{
     dialect:'postgres',
     protocol:'postgres',
     dialectOptions:{
