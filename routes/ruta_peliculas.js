@@ -42,7 +42,7 @@ router.get('/:id', async (req,res)=>{
 
 router.post('/',validarToken, async (req,res)=>{
     const body=req.body
-    const data=await pelicula.create(body)
+    const data=await pelicula.bulkCreate(body)
     res.send(data)
 })
 
