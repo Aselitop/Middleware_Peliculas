@@ -4,7 +4,7 @@ import path from 'path'
 import rutaPeliculas from './routes/ruta_peliculas.js'
 import jwt from 'jsonwebtoken' 
 
-const port=3000
+const port = process.env.PORT || 3000;
 
 const app=express()
 
