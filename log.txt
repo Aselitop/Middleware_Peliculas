@@ -118,3 +118,12 @@
 28/5/2026, 7:46:06 p.m. - GET en /peliculas
 28/5/2026, 7:46:35 p.m. - GET en /peliculas
 28/5/2026, 7:46:39 p.m. - POST en /peliculas
+28/5/2026, 7:54:04 p.m. - POST en /peliculas/login
+28/5/2026, 7:54:30 p.m. - GET en /peliculas
+28/5/2026, 7:55:22 p.m. - POST en /peliculas
+28/5/2026, 7:55:30 p.m. - GET en /peliculas
+28/5/2026, 8:00:37 p.m. - GET en /peliculas/login
+28/5/2026, 8:00:42 p.m. - POST en /peliculas/login
+28/5/2026, 8:00:51 p.m. - GET en /peliculas/login
+28/5/2026, 8:00:56 p.m. - GET en /peliculas
+28/5/2026, 8:01:09 p.m. - POST en /peliculas
